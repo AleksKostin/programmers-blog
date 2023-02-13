@@ -2,7 +2,6 @@ import webpack from 'webpack';
 import { BuildOptions } from './types/config';
 
 export function buildResolves(options: BuildOptions): webpack.ResolveOptions {
-
   return {
     extensions: ['.tsx', '.ts', '.js'],
     preferAbsolute: true,
@@ -10,4 +9,4 @@ export function buildResolves(options: BuildOptions): webpack.ResolveOptions {
     mainFiles: ['index'],
     alias: {},
   };
-};
+}

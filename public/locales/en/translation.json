@@ -1,5 +1,8 @@
 {
   "test": "Test example",
   "language": "English",
-  "notFoundPage": "Page not found"
+  "notFoundPage": "Page not found",
+  "pageError": "An unexpected error has occurred",
+  "refreshPage": "Refresh page",
+  "bugButton": "Error"
 }

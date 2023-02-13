@@ -19,6 +19,8 @@ export function buildPlugins({ paths, isDev }: BuildOptions): webpack.WebpackPlu
       __IS_DEV__: JSON.stringify(isDev),
     }),
     new webpack.HotModuleReplacementPlugin(),
-    ...(isDev ? [new ReactRefreshWebpackPlugin()] : []),
+    ...(isDev ? [new ReactRefreshWebpackPlugin({
+      overlay: false,
+    })] : []),
   ];
 }

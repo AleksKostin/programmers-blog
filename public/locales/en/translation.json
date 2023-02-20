@@ -4,5 +4,7 @@
   "notFoundPage": "Page not found",
   "pageError": "An unexpected error has occurred",
   "refreshPage": "Refresh page",
-  "bugButton": "Error"
+  "bugButton": "Error",
+  "mainPage": "Main",
+  "aboutPage": "About"
 }

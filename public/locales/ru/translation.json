@@ -4,5 +4,7 @@
   "notFoundPage": "Страница не найдена",
   "pageError": "Произошла непредвиденная ошибка",
   "refreshPage": "Обновите страницу",
-  "bugButton": "Ошибка"
+  "bugButton": "Ошибка",
+  "mainPage": "Главная",
+  "aboutPage": "О сайте"
 }

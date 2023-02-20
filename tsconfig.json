@@ -19,8 +19,10 @@
       "module": "CommonJS"
     }
   },
-  "include": [
+  "include":
+  [
     "./config/jest/setupTests.ts",
-    "src"
+    "src",
+    "config/stories"
   ],
 }

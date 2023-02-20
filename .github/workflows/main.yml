@@ -1,0 +1,29 @@
+name: Linter & Testing & Building
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+jobs:
+  pipline:
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        node-version: [ 17.x ]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Staring Node ${{ matrix.node-vrsion }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: install modules
+        run: npm ci
+      - name: build project
+        run: npm run build:prod
+      - name: linting TS
+        run: npm run lint:ts
+      - name: linting CSS
+        run: npm run lint:scss
+      - name: unit testing
+        run: npm run test:unit

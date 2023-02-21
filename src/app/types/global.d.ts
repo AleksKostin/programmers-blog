@@ -14,5 +14,6 @@ declare module '*.svg' {
   const content: React.FunctionComponent<React.SVGAttributes<SVGElement>>;
   export default content;
 }
+declare module 'case-sensitive-paths-webpack-plugin';
 
 declare const __IS_DEV__: boolean;

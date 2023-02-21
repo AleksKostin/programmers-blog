@@ -3,6 +3,7 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import webpack from 'webpack';
 import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
+import CaseSensitivePathsPlugin from 'case-sensitive-paths-webpack-plugin';
 import { BuildOptions } from './types/config';
 
 export function buildPlugins({ paths, isDev }: BuildOptions): webpack.WebpackPluginInstance[] {
@@ -25,5 +26,9 @@ export function buildPlugins({ paths, isDev }: BuildOptions): webpack.WebpackPlu
     ...(isDev ? [new BundleAnalyzerPlugin({
       openAnalyzer: false,
     })] : []),
+    ...(isDev ? [new BundleAnalyzerPlugin({
+      openAnalyzer: false,
+    })] : []),
+    new CaseSensitivePathsPlugin(),
   ];
 }

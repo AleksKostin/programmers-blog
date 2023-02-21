@@ -6,14 +6,14 @@ on:
   pull_request:
     branches: [ master ]
 jobs:
-  pipline:
+  pipeline:
     runs-on: macos-latest
     strategy:
       matrix:
         node-version: [ 17.x ]
     steps:
       - uses: actions/checkout@v2
-      - name: Staring Node ${{ matrix.node-vrsion }}
+      - name: Starting Node ${{ matrix.node-vrsion }}
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
@@ -27,3 +27,7 @@ jobs:
         run: npm run lint:scss
       - name: unit testing
         run: npm run test:unit
+      - name: build storybook
+        run: npm run storybook:build
+      - name: screenshot testing
+        run: npm run test:ui:ci

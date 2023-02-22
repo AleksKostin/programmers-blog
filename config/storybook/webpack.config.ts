@@ -29,7 +29,9 @@ export default ({ config }: { config: webpack.Configuration }) => {
     use: ['@svgr/webpack'],
   });
 
-  config.plugins?.push(new CaseSensitivePathsPlugin() as { apply(...args: any[]): void; });
+  config.plugins?.push(new CaseSensitivePathsPlugin({
+    useBeforeEmitHook: true,
+  }) as { apply(...args: any[]): void; });
 
   return config;
 };

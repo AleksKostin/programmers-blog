@@ -1,6 +1,5 @@
 import path from 'path';
 import webpack, { RuleSetRule } from 'webpack';
-import CaseSensitivePathsPlugin from 'case-sensitive-paths-webpack-plugin';
 import { BuildPaths } from '../build/types/config';
 import buildCssLoader from '../build/loaders/buildCssLoader';
 
@@ -28,10 +27,6 @@ export default ({ config }: { config: webpack.Configuration }) => {
     test: /\.svg$/,
     use: ['@svgr/webpack'],
   });
-
-  config.plugins?.push(new CaseSensitivePathsPlugin({
-    useBeforeEmitHook: true,
-  }) as { apply(...args: any[]): void; });
 
   return config;
 };

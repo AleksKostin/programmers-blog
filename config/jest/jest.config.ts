@@ -53,6 +53,10 @@ export default {
     '<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)',
   ],
 
+  globals: {
+    __IS_DEV__: true,
+  },
+
   // Indicates whether the coverage information should be collected while executing the test
   // collectCoverage: false,
 

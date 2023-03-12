@@ -31,11 +31,9 @@ export const Navbar = ({ className }: NavbarProps) => {
       >
         {t('signIn')}
       </Button>
-      <Portal element={document.querySelector('.app')}>
-        <Modal isOpen={isAuthModal} onClose={onToggleModal}>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, delectus. Explicabo, harum nobis unde rem nulla quis mollitia labore eaque autem voluptatibus quam, veritatis sunt quo fugit excepturi. Dicta, consequatur.
-        </Modal>
-      </Portal>
+      <Modal isOpen={isAuthModal} onClose={onToggleModal}>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, delectus. Explicabo, harum nobis unde rem nulla quis mollitia labore eaque autem voluptatibus quam, veritatis sunt quo fugit excepturi. Dicta, consequatur.
+      </Modal>
     </div>
   );
 };

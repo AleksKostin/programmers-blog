@@ -10,12 +10,8 @@ interface PortalProps {
 export const Portal: React.FC<PortalProps> = (props) => {
   const {
     children,
-    element,
+    element = document.body,
   } = props;
 
-  if (element) {
-    return createPortal(children, element);
-  }
-
-  return createPortal(children, document.body);
+  return createPortal(children, element);
 };

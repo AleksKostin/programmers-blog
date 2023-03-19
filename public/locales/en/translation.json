@@ -8,5 +8,7 @@
   "mainPage": "Main",
   "aboutPage": "About",
   "shortLanguage": "En",
-  "signIn": "Sign in"
+  "signIn": "Sign in",
+  "username": "Enter username",
+  "password": "Enter password"
 }

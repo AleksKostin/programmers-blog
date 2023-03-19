@@ -8,5 +8,7 @@
   "mainPage": "Главная",
   "aboutPage": "О сайте",
   "shortLanguage": "Ru",
-  "signIn": "Войти"
+  "signIn": "Войти",
+  "username": "Введите логин",
+  "password": "Введите пароль"
 }

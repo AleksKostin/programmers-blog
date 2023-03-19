@@ -15,6 +15,7 @@ interface ModalProps {
   children?: ReactNode;
   isOpen?: boolean;
   onClose?: () => void;
+  lazy?: boolean;
 }
 
 const ANIMATION_DELAY = 300;
@@ -25,6 +26,7 @@ export const Modal: React.FC<ModalProps> = (props) => {
     children,
     isOpen,
     onClose,
+    lazy,
   } = props;
 
   const [isClosing, setIsClosing] = useState(false);
@@ -66,6 +68,10 @@ export const Modal: React.FC<ModalProps> = (props) => {
       window.removeEventListener('keydown', onKeyDown);
     };
   }, [isOpen, onKeyDown]);
+
+  if (lazy && !isOpen) {
+    return null;
+  }
 
   return (
     <Portal>

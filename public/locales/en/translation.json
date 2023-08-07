@@ -10,5 +10,8 @@
   "shortLanguage": "En",
   "signIn": "Sign in",
   "username": "Enter username",
-  "password": "Enter password"
+  "password": "Enter password",
+  "formAuthorization": "Authorization",
+  "errorPassword": "Uncorrect username or password",
+  "signOut": "Sign out"
 }

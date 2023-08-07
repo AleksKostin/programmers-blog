@@ -10,5 +10,8 @@
   "shortLanguage": "Ru",
   "signIn": "Войти",
   "username": "Введите логин",
-  "password": "Введите пароль"
+  "password": "Введите пароль",
+  "formAuthorization": "Авторизация",
+  "errorPassword": "Вы ввели неверный логин или пароль",
+  "signOut": "Выйти"
 }

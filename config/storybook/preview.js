@@ -1,4 +1,3 @@
-import { addDecorator } from '@storybook/react';
 import {
   TranslationDecorator,
 } from '../../src/shared/config/storybook/TranslationDecorator/TranslationDecorator';
@@ -15,9 +14,12 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  layout: 'fullscreen',
 };
 
-addDecorator(StyleDecorator);
-addDecorator(TranslationDecorator);
-addDecorator(ThemeDecorator(Theme.LIGHT));
-addDecorator(RouterDecorator);
+export const decorators = [
+  TranslationDecorator,
+  StyleDecorator,
+  ThemeDecorator(Theme.LIGHT),
+  RouterDecorator,
+];

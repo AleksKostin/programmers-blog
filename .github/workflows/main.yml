@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 jobs:
   pipeline:
-    runs-on: macOS-latest
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [ 17.x ]

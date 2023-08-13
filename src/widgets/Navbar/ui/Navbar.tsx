@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 /* eslint-disable i18next/no-literal-string */
 import { LoginModal } from 'features/AuthByUsername';
-import { useCallback, useState } from 'react';
+import { memo, useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Button, ThemeButton } from 'shared/ui/Button/Button';
@@ -13,7 +13,7 @@ interface NavbarProps {
   className?: string;
 }
 
-export const Navbar = ({ className }: NavbarProps) => {
+export const Navbar = memo(({ className }: NavbarProps) => {
   const { t } = useTranslation();
   const dispatch = useDispatch();
   const [isAuthModal, setAuthModal] = useState(false);
@@ -64,4 +64,4 @@ export const Navbar = ({ className }: NavbarProps) => {
       )}
     </div>
   );
-};
+});

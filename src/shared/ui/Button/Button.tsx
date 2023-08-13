@@ -1,4 +1,4 @@
-import React, { ButtonHTMLAttributes } from 'react';
+import { ButtonHTMLAttributes, ReactNode, memo } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
 import cls from './Button.module.scss';
 
@@ -18,13 +18,14 @@ export enum ButtonSize {
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;
-  theme?: ThemeButton,
-  square?: boolean,
-  size?: ButtonSize,
-  disabled?: boolean,
+  theme?: ThemeButton;
+  square?: boolean;
+  size?: ButtonSize;
+  disabled?: boolean;
+  children?: ReactNode;
 }
 
-export const Button: React.FC<ButtonProps> = (props) => {
+export const Button = memo((props: ButtonProps) => {
   const {
     className,
     children,
@@ -51,4 +52,4 @@ export const Button: React.FC<ButtonProps> = (props) => {
       {children}
     </button>
   );
-};
+});

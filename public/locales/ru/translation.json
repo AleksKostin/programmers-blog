@@ -13,5 +13,6 @@
   "password": "Введите пароль",
   "formAuthorization": "Авторизация",
   "errorPassword": "Вы ввели неверный логин или пароль",
-  "signOut": "Выйти"
+  "signOut": "Выйти",
+  "profilePage": "Профиль"
 }

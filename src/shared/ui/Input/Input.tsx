@@ -31,7 +31,7 @@ export const Input = memo((props: InputProps) => {
 
   useEffect(() => {
     if (isFocus) {
-      inputRef.current.focus();
+      inputRef?.current?.focus();
     }
   }, [isFocus]);
 

@@ -52,9 +52,11 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error', // Проверяем правила хуков
     'react-hooks/exhaustive-deps': 'error', // Проверяем зависимости эффекта
     'no-param-reassign': 'off',
+    'no-undef': 'warn',
   },
   globals: {
     __IS_DEV__: true,
+    __API__: true,
   },
   overrides: [
     {

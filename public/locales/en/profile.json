@@ -2,5 +2,15 @@
   "profile": "Profile",
   "redact": "Redact",
   "firstname": "Your name",
-  "lastname": "Your lastname"
+  "lastname": "Your lastname",
+  "errorProfile": "An error occurred while loading the profile",
+  "refreshPage": "Try refreshing the page",
+  "cancel": "Cancel",
+  "save": "Save",
+  "age": "Your age",
+  "city": "City",
+  "username": "Username",
+  "avatar": "Link to avatar",
+  "currency": "Specify currency",
+  "country": "Specify country"
 }

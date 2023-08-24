@@ -12,5 +12,10 @@
   "username": "Username",
   "avatar": "Link to avatar",
   "currency": "Specify currency",
-  "country": "Specify country"
+  "country": "Specify country",
+  "serverError": "Server error on save",
+  "ageError": "Incorrect age",
+  "cityError": "City not specified",
+  "dataError": "First and last name are required",
+  "noData": "Data not specified"
 }

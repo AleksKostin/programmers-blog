@@ -14,5 +14,6 @@
   "formAuthorization": "Authorization",
   "errorPassword": "Uncorrect username or password",
   "signOut": "Sign out",
-  "profilePage": "Profile"
+  "profilePage": "Profile",
+  "articlesPage": "Articles"
 }

@@ -15,5 +15,6 @@
   "errorPassword": "Вы ввели неверный логин или пароль",
   "signOut": "Выйти",
   "profilePage": "Профиль",
-  "articlesPage": "Статьи"
+  "articlesPage": "Статьи",
+  "noComments": "Комментарии отсутствуют"
 }

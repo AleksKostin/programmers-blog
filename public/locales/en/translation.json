@@ -15,5 +15,6 @@
   "errorPassword": "Uncorrect username or password",
   "signOut": "Sign out",
   "profilePage": "Profile",
-  "articlesPage": "Articles"
+  "articlesPage": "Articles",
+  "noComments": "No comments"
 }

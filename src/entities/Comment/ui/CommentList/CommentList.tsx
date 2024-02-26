@@ -20,6 +20,16 @@ export const CommentList = memo((props: CommentListProps) => {
     isLoading,
   } = props;
 
+  if (isLoading) {
+    return (
+      <div className={classNames(cls.commentList, {}, [className])}>
+        <CommentCard isLoading className={cls.comment} />
+        <CommentCard isLoading className={cls.comment} />
+        <CommentCard isLoading className={cls.comment} />
+      </div>
+    );
+  }
+
   return (
     <div className={classNames(cls.commentList, {}, [className])}>
       {
